@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "url_app/base.html" %}
+{% load my_extras %}
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body> -->
+  {% block body_block %}
+    <h1>Welcome to index</h1>
+    <!-- <h2>This is index.html page showing</h2> -->
+    <h2>{{text|cut:'hello'}}</h2>
+    <h2>{{number|add:'99'}}</h2>
+
+  {% endblock %}
+  <!-- </body>
+</html> -->
